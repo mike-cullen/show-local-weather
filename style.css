@@ -1,0 +1,132 @@
+body {
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  background-color: #999;
+  color: white;
+  font-family: Courier New;
+}
+
+a {
+  color: #89bf5e;
+}
+
+.dataWeather {
+  display: none;
+}
+
+#dateNow {
+  float : left;
+  font-size: 2em;
+}
+
+#timeNow {
+  float: right;
+  font-size: 2em;
+}
+
+#line {
+  border-width: 0.5em;
+  }
+
+#icon {
+  font-size: 9em;
+}
+
+#city{
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+#weather {
+  font-size: 8em;
+}
+
+#temperature {
+  font-size: 7em;
+  margin-left: .3em;
+}
+
+#TempU {
+  font-size: 2em;
+}
+
+#pressureIcon {
+  margin-left: -3em;
+}
+
+#secondaryInfo {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  margin-right: 2em;
+}
+
+#hum {
+ margin-left: -6em;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 6px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffc299;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 0;
+  bottom: -9px;
+  background-color: #ffc299;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffc299;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #89bf5e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 90px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.fa-3x {
+  font-size: 10em;
+}
+.loader {
+  margin-top: 1.5em;
+}
+
